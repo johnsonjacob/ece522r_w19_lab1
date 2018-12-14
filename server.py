@@ -3,7 +3,7 @@ import socket
 
 
 def main():
-    host = socket.gethostname()
+    host = '0.0.0.0'
     port = 8080
 
     # Create an INET, STREAMing socket
@@ -22,6 +22,7 @@ def main():
         # Accept connections from outside
         print("Listening for connections")
         (clientsocket, address) = serversocket.accept()
+        print("A client has connected!")
 
         # Get request from the client
         http_request = b''
@@ -36,7 +37,7 @@ def main():
                 exit()
 
             http_request += chunk
-            # print("Part of HTTP Request:", http_request)
+            print("Part of HTTP Request:", http_request)
 
             # Check if the whole HTTP request has been received
             if contains_http_request(http_request):
