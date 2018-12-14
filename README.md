@@ -1,6 +1,6 @@
 # Lab 1
 
-## Goal
+## Goals
 
 - Get experience with the HTTP protocol through parsing a HTTP request and building a HTTP response.
 - Understand TCP ports.
@@ -13,7 +13,7 @@ Write a simple HTTP server that can serve up any file. A real web browser (such 
 ## Requirements
 
 - [ ] Point a web browser to `http://localhost:8080/page.html` and the webpage should show.
-- [ ] If you request a file does not exist (e.g. `http://localhost:8080/fdfasd.html`), a proper error message is returned (HTTP/1.1 404 File Not Found)
+- [ ] If you request a file does not exist (e.g. `http://localhost:8080/fdfasd.html`), a proper error message is returned (`HTTP/1.1 404 File Not Found`)
 - [ ] Provide a command line option to change the port that your server is running on
 
 
@@ -21,9 +21,9 @@ Write a simple HTTP server that can serve up any file. A real web browser (such 
 
 [HTTP Message Format](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Message_format)
 
-[netcat](http://netcat.sourceforge.net) for debugging.
+[netcat](http://netcat.sourceforge.net) for debugging. netcat (or nc) allows you to open a raw TCP socket to a server. From there, you can manually enter in the HTTP request and see how your server response. This is installed on most Linux computers.
 
 
 ## Troubleshooting
 
-- "Address already in use" error. TCP sockets have timers set up so that the port that the socket was bound to is not immediately available. This happens when your server crashes without properly closing down the socket. To work around this issue, use a different port.
+"Address already in use" error. TCP sockets have timers set up so that the port that the socket was bound to is not immediately available. This happens when your server crashes without properly closing down the socket. To work around this issue, use a different port.
