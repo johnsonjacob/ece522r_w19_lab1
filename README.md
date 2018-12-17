@@ -1,9 +1,9 @@
-# Lab 1
+# Lab 1 -- HTTP Server
 
 ## Goals
 
-- Get experience with the HTTP protocol through parsing a HTTP request and building a HTTP response.
-- Understand TCP ports.
+- Get experience with the HTTP protocol through parsing a HTTP request and building a HTTP response
+- Understand TCP ports
 
 ## Description
 
