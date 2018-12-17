@@ -1,4 +1,4 @@
-# Lab 1 -- HTTP Server
+# Lab 1 – HTTP Server
 
 ## Goals
 
